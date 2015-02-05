@@ -1,0 +1,8 @@
+{
+    "smtp_server": "smtp.yandex.ru",
+    "smtp_port": 465,
+    "sender": "example@yandex.ru",
+    "smtp_password": "my password",
+    "to": "example@mail.ru",
+    "subject": "example"
+}
