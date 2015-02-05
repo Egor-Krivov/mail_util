@@ -27,5 +27,3 @@ def send_data(message):
     
     mail_lib.sendmail(sender, to, msg.as_string())
     mail_lib.quit
-    
-send_data('asd')
