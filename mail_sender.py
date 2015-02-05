@@ -6,6 +6,8 @@ def send_data(message):
     """Send message to some e-mail.
     Settings should be located in current folder in file settings.json.
     See settings.json.template for example."""
+    data = json.load(open('settings.json'))
+    
     smtp_server = data['smtp_server']
     smtp_port = data['smtp_port']
     
@@ -26,3 +28,4 @@ def send_data(message):
     mail_lib.sendmail(sender, to, msg.as_string())
     mail_lib.quit
     
+send_data('asd')
